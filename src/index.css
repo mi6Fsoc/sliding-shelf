@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #EDEBE6;
+  --sheet: #F4F2ED;
+  --ink: #141414;
+  --muted: #6D6A63;
+  --cobalt: #1F3FB0;
+  --rule: rgba(20, 20, 20, 0.9);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --H: min(46vh, 31vw);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --H: min(60vw, 40svh);
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--paper);
+  color: var(--ink);
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter Tight", "Noto Sans JP", system-ui, sans-serif;
+}
+
+@media (pointer: fine) {
+  html, body, button, a {
+    cursor: none !important;
+  }
+}
+
+.font-serif-vasari {
+  font-family: "Newsreader", Georgia, serif;
+}
+
+.font-sans-vasari {
+  font-family: "Inter Tight", "Noto Sans JP", system-ui, sans-serif;
+}
+
+.font-logo-sc {
+  font-family: "Noto Serif SC", serif;
+}
+
+.lbl {
+  font-family: "Inter Tight", "Noto Sans JP", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 10.5px;
+  line-height: 1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  padding: 0 8px;
+  border: 1px solid var(--rule);
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .lbl {
+    font-size: 9px;
+  }
+}

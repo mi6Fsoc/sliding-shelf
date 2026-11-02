@@ -1,0 +1,6 @@
+{
+  "name": "Leon Vasari — VHS Filmography",
+  "description": "Filmography hero shelf and interactive 3D VHS archive for fictional film director Leon Vasari.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
